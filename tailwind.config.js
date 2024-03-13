@@ -14,19 +14,41 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontSize: {
+      xs: "0.9rem",
+      sm: "1.07rem",
+      base: "1.18rem",
+      lg: "1.24rem",
+      xl: "1.38rem",
+      "2xl": "1.82rem",
+      "3xl": "2.22rem",
+      "4xl": "2.66rem",
+      "5xl": "3.56rem",
+      "6xl": "4.44rem",
+      "7xl": "5.33rem",
+      "8xl": "7.1rem",
+      "9xl": "9.5rem",
+    },
     extend: {
+      transitionDuration: {
+        DEFAULT: "333ms",
+      },
+      transitionTimingFunction: {
+        DEFAULT: "ease-in-out",
+      },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        background: "var(--background)",
         foreground: "hsl(var(--foreground))",
+        sidebar: "var(--sidebar)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "var(--secondary)",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
@@ -34,7 +56,7 @@ module.exports = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
+          DEFAULT: "var(--muted)",
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
@@ -46,7 +68,7 @@ module.exports = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
+          DEFAULT: "var(--card)",
           foreground: "hsl(var(--card-foreground))",
         },
       },

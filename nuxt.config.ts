@@ -4,6 +4,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
+    ['@nuxtjs/google-fonts',
+      {
+        families: {
+          Lato: [100, 400],
+        }
+      }
+    ],
   ],
   'shadcn': {
     prefix: 'Ui',
