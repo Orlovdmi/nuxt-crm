@@ -1,4 +1,4 @@
-export const APP_WRITE_ID = 'nuxt';
+export const APP_WRITE_ID = '65f2cb297d44f7da34ad';
 export const DB_ID = 'nuxtbase';
 export const COLLECTION_DETAILS = 'deals';
 export const COLLECTION_CUSTOMERS = 'customers';
