@@ -6,7 +6,7 @@ export interface IBaseField {
 export interface ICustomer extends IBaseField {
     name: string
     email: string
-    avatar_url: string
+    avatar_url?: string
     from_source?: string
 }
 
@@ -17,7 +17,7 @@ export interface IComment extends IBaseField {
 export enum EnumStatus {
     'todo' = 'todo',
     'to-be-agreed' = 'to-be-agreed',
-    'in_progress' = 'in_progress',
+    'in-progress' = 'in-progress',
     'produced' = 'produced',
     'done' = 'done',
 }
@@ -27,4 +27,5 @@ export interface IDeal extends IBaseField {
     customer: ICustomer
     name: string
     price: number
+    status: EnumStatus
 }

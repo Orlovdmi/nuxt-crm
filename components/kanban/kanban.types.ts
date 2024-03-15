@@ -1,4 +1,4 @@
-import type { EnumStatus } from './kanban.enums'
+import type { EnumStatus } from '~/types/deals.types'
 
 export interface ICard {
     id: string
@@ -12,5 +12,5 @@ export interface ICard {
 export interface IColumn {
     id: EnumStatus
     name: string
-    cards: ICard[]
+    items: ICard[]
 }
